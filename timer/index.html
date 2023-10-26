@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="h-full " lang="nl">
+
+<head>
+	<meta charset="utf-8">
+	<title>Aftelklok</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-gray-950 text-amber-400 h-full ">
+	<div class="container h-full  mx-auto p-3 grid place-content-center">
+		<div class="h-min">
+		<div id="clockdiv" class="flex clockstate-stopped border-4 px-20 my-5">
+			<div>
+				<span class="font-mono text-ultra minutes fig">00</span>
+			</div>
+			<div class="separator font-mono text-ultra fig">:</div>
+			<div>
+				<span class="font-mono text-ultra seconds fig">00</span>
+			</div>
+		</div>
+		<div class="mt-4 flex gap-2" id="controls">
+			<button class="bg-amber-400  p-4 py-2 text-gray-950 disabled:bg-gray-950 disabled:border-2  disabled:border-amber-400 disabled:text-amber-400" id="reset">Reset</button>
+			<button class="bg-amber-400  p-4 py-2 text-gray-950 disabled:bg-gray-950 disabled:border-2  disabled:border-amber-400 disabled:text-amber-400" id="start">Start</button>
+			<button class="bg-amber-400  p-4 py-2 text-gray-950 disabled:bg-gray-950 disabled:border-2  disabled:border-amber-400 disabled:text-amber-400" id="pause">Pause</button>
+			<button class="bg-amber-400  p-4 py-2 text-gray-950 disabled:bg-gray-950 disabled:border-2  disabled:border-amber-400 disabled:text-amber-400" id="add">+10s</button>
+			<button class="bg-amber-400  p-4 py-2 text-gray-950 disabled:bg-gray-950 disabled:border-2  disabled:border-amber-400 disabled:text-amber-400" id="remove">-10s</button>
+		</div>
+	</div>
+	</div>
+	<script src="script.js"></script>
+
+</body>
+
+</html>

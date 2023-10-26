@@ -1,0 +1,35 @@
+@tailwind base;
+
+
+@layer base {
+	/* .clockstate-A  .separator {
+		@apply animate-pulse-sec;
+	}
+	.clockstate-B  .separator {
+		@apply animate-pulse-sec;
+	} */
+	.clockstate-running {
+		@apply border-amber-400;
+	}
+	.clockstate-running .separator {
+		@apply animate-pulse-sec;
+	} 
+	.clockstate-paused {
+		@apply border-amber-700;
+	}
+	.clockstate-stopped {
+		@apply border-amber-700;
+	}
+	.clockstate-stopped .fig {
+		@apply text-amber-400;
+	}
+	.laststretch {
+		@apply bg-amber-400;
+	}
+	.laststretch .fig {
+		@apply text-gray-950;
+	}
+}
+
+@tailwind components;
+@tailwind utilities;
